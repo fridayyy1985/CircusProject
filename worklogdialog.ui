@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WorkLogDialog</class>
+ <widget class="QDialog" name="WorkLogDialog">
+  <property name="windowTitle">
+   <string>Выход на работу</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="labelArtist">
+     <property name="text">
+      <string>Артист:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QComboBox" name="comboArtist"/>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="labelShow">
+     <property name="text">
+      <string>Шоу:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QComboBox" name="comboShow"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="labelPay">
+     <property name="text">
+      <string>Оплата за выход:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QDoubleSpinBox" name="doubleSpinBoxPay">
+     <property name="decimals">
+      <number>2</number>
+     </property>
+     <property name="maximum">
+      <double>999999999.99</double>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="2">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+</ui>
